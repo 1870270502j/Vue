@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--   最大的-->
+    <div id="app">
+<!-- 头部-->
+<header>
+   <div class="container">
+    <div class="logo">
+        <h2>笔记</h2>
+    </div>
+    </div>
+</header>
+<!-- 头部-->  
+<!--   添加笔记-->
+    <div class="append">
+        <div class="container clearfix">
+            <div class="time fl">
+                2018.09.24{{time}}
+            </div>
+            <div class="input fl">
+                <input type="text" v-model="biaoti" placeholder="标题">
+                <br>
+                <textarea v-model="txt"></textarea>
+
+            </div>
+            <div class="btn fr">
+                <button @click="fun">添加笔记</button>
+            </div>
+        </div>
+    </div>
+<!--   添加笔记-->
+<!--   已添加-->
+        <div class="main">
+           <div class="container">
+                 <div class="to clearfix" v-for="(add,index) in added">
+                <div class="time fl">
+                    {{add.intime}}
+                </div>
+                <div class="input fl">
+                   <h4>{{add.tit}}</h4>
+                    <p contenteditable="plaintext-only">{{add.text}}</p>
+                    <p>{{add.shuz}}字</p>
+                </div>
+                <div class="del fr">
+                    <button @click="del(index)">删除</button>
+                </div>
+                
+                </div>
+           </div>
+          
+        </div>
+<!--   已添加-->
+    </div>
+<!--   最大的-->
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

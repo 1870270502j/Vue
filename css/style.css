@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.container{
+    width: 1000px;
+    margin:  0 auto;
+}
+
+.logo h2{
+    text-align: center;
+/*    width: 1000px;*/
+    margin-top: 20px;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.append{
+    margin-bottom: 30px;
+}
+.append .time,.main .time{
+    text-align: center;
+    width: 100px; 
+    margin-top: 100px;
+}
+.append .input input{
+    width: 778px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.append .input textarea{
+    width: 778px;
+   height: 150px;
+    resize:none;
+}
+.append  button{
+    margin-top: 92px;
+    width: 90px;
+    height: 40px;
+    border: 1px solid #000;
+    background: #fff;
+    border-radius: 4px;
+    color: #000;
+} 
+input{
+    border: none;
+}
+
+.main .input h5{
+    
+}
+.main .input p{
+    font-size: 13px;
+    width: 778px;
+    word-break: break-all
+}
+.main .input p{}
+.main .to{
+    border-bottom: 1px solid #e7e5e8;
+}
+
+.main .to:nth-of-type(1){
+    display: none;
+}
+.main .del{
+    margin-top: 20px;
+}
